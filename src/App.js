@@ -67,7 +67,7 @@ function App() {
             );
           })
         ) : (
-          <div className="empty-message">"Nothing to do...Enjoy!!!" </div>
+          <div className="empty-message">Nothing to do...Enjoy!!!</div>
         )}
       </div>
     </div>
