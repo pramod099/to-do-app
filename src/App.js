@@ -17,7 +17,6 @@ function App() {
       setTodos([...todos, input]);
       setInput(EMPTY);
     }
-    console.log(todos);
   };
 
   const deleteTodo = (index) => {
