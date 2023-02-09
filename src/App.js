@@ -8,12 +8,14 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import { useState } from "react";
 
 function App() {
-  const [input, setInput] = useState("");
+  const EMPTY = "";
+  const [input, setInput] = useState(EMPTY);
   const [todos, setTodos] = useState([]);
 
   const addTodo = () => {
-    if (input !== "") {
+    if (input !== EMPTY) {
       setTodos([...todos, input]);
+      setInput(EMPTY);
     }
     console.log(todos);
   };
